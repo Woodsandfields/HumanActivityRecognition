@@ -1,5 +1,8 @@
 # HAR - HumanActivityRecognition
-Cleaning Data for HAR with smartphones datasets
+Cleaning Data for HAR with smartphones datasets. 
+
+Full description of the data and how they originated is here:
+http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
 To format this repository I used the guide for datasharing provided by @jtleek : https://github.com/jtleek/datasharing 
 
