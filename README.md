@@ -14,6 +14,6 @@ To format this repository I used the guide for datasharing provided by @jtleek :
 - **codebook.md** : what you need to know about the variables
 
 
-##run_analysis.R
+## run_analysis.R
 this script runs in R. Once you have loaded it into an R environnement together with the unzipped raw data (rawdata.zip), you can launch the script that led from raw data to the two final data sets (data_set1 and data_set2) by typing: run_analysis(), which will call the function included in this file.
 In addition, if you want to save the two new data sets as separated files in the current folder on your computer, uncomment the last lines of the script (remove the hashtags at the start of the two last lines). 
