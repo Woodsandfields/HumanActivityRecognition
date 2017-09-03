@@ -88,7 +88,6 @@ run_analysis <- function(){
         
         ######### UNCOMMENT NEXT LINES TO SAVE THE CREATED DATA SETS TO FILES  ########         
         
-        # write.table(data_set2, "data_set2.csv", sep = ",", row.names = FALSE, col.names = colnames(data_set2)) 
-        # 
+        # write.table(data_set2, "data_set2.csv", sep = ",", row.names = FALSE, col.names = colnames(data_set2))
         # write.table(data_set1, "data_set1.csv", sep = ",", row.names = FALSE, col.names = colnames(data_set1)) 
 }
