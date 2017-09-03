@@ -18,5 +18,5 @@ To format this repository I used the guide for datasharing provided by @jtleek :
 ## more detail
 ### run_analysis.R
 This is the script that led from raw data to the two final data sets (data_set1 and data_set2).
-This script runs in R. Once you have loaded it into a folder together with the unzipped raw data (see rawdata.md), you can launch it in an R environnement. Then just type 'run_analysis()' in the console: that will call the function processing the data.
+This script runs in R. Once you have loaded it into a folder together with the unzipped raw data (see rawdata.md), you can launch it in an R environnement. Then just type `run_analysis()` then press 'enter' in the console: that will call the function processing the data.
 In addition, if you want to save the two newly created data sets as separated files in the current folder, then you have uncomment the last two lines of the script (i.e. remove the hashtags at the start of the two last lines). 
