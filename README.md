@@ -32,10 +32,10 @@ Explains the way the presented data were collected, and details each variable.
 ### data_set1.csv
 *data_set1.csv* has been created through the R script *run_analysis.R* (also present in this repository). It merges the *X train set* and *X test set* from the raw data and makes them readable by adding all necessary information from the original folder through appropriate row and column names, especially detailing subjects and activities, and keeping for each observation the variable information only when related to means and standard deviation. It might constitute a sound basis for further investigation on the whole data set.
 
-NB: This file is too big for github to present it in a easily readable way, so you will have to import it in order to read. However, you might just want to go to *data_set2.csv* instead, as this second file emanates from this one and presents the end summary results while being easier to read as a nice tidy table in github just by clicking on it (see *data_set2.csv*).  
+NB: This file is too big for GitHub to present it in a easily readable way, so you will have to import it in order to read. However, you might just want to go to *data_set2.csv* instead, as this second file emanates from this one and presents the end summary results while being easier to read as a nice tidy table in github just by clicking on it (see *data_set2.csv*).  
 
 ### data_set2.csv
-Just as for *data_set1.csv*, this file has been created through the *run_analysis.R* script. It displays a summary of the data by activity and subject for the chosen mean and standard deviation variables. You can glimpse into it just by clicking on the github link.
+Just as for *data_set1.csv*, this file has been created through the *run_analysis.R* script. It displays a summary of the data by activity and subject for the chosen mean and standard deviation variables. You can glimpse into it just by clicking on the GitHub link.
 
 ### run_analysis.R
 This is the script that led from raw data to the two final data sets (*data_set1* and *data_set2*). This script runs in R. Once you have loaded it into a folder together with the unzipped raw data (see *rawdata.md*), you can launch it in an R environnement. Then, just type `run_analysis()` and press 'enter' in the console: that will call the function processing the data. 
