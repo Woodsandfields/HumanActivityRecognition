@@ -4,7 +4,8 @@ Cleaning Data for HAR with smartphones datasets.
 Here you will find:
 - Files in this repository (a detailed list)
 - What you need to know about the files
-- Some information about the way the data were processed
+- Some information about the way the data were 
+- license information and more
 
 Full description of the data and how they originated is here:
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
@@ -41,3 +42,20 @@ It gives a summary of the data by activity and subject for the chosen mean and s
 ### run_analysis.R
 This is the script that led from raw data to the two final data sets (data_set1 and data_set2). It has been issued for this project.
 This script runs in R. Once you have loaded it into a folder together with the unzipped raw data (see *rawdata.md*), you can launch it in an R environnement. Then, just type `run_analysis()` and press 'enter' in the console: that will call the function processing the data. Also, if you want to save the two newly created data sets as separated files in the current folder (and thus get yourself *dat_set1.csv* and *data_set2.csv* as presented here), then you have to uncomment the last two lines of the script (i.e. remove the hashtags at the start of the two last lines). 
+
+## License information and more
+
+Context of this project
+=======================
+
+This project has been created for the final assignment of the Data Cleaning course made for Coursera by Johns Hopkins University within its data specialization track.
+
+License:
+========
+Use of this dataset in publications must be acknowledged by referencing the following publication [1] 
+
+[1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
+
+This dataset is distributed AS-IS and no responsibility implied or explicit can be addressed to the authors or their institutions for its use or misuse. Any commercial use is prohibited.
+
+Jorge L. Reyes-Ortiz, Alessandro Ghio, Luca Oneto, Davide Anguita. November 2012.
