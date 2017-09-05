@@ -16,11 +16,10 @@ To format this repository I used the guide for datasharing provided by @jtleek :
 
 - **README.md** : this file you are currently reading
 - **CodeBook.md** : what you need to know about the experiment and the variables
-- **data_set1.csv** : the first data set created through this project
-- **data_set2.csv** : the second data set created through this project
-- **rawData.md**: a link to a heavy zip.file containing the set of data originally used for this project 
-- **tidyData.csv** : contains the  data_set as created by the 'runanalysis.R' file in the context of this project
-- **run_analysis.R** : the script in R created for this project in order to get to the final tidyData.csv file 
+- **data_set1.csv** : the first data set created: observations from the original project for mean and standard deviation
+- **data_set2.csv** : the second data set created through this project, summarizing the first created data set.
+- **rawData.md**: link to the series of txt files with the original data (too heavy to upload to GitHub) 
+- **run_analysis.R** : the script in R made for this project in order to get to the two new data sets. 
 
 ## What you need to know about the files
 
