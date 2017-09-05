@@ -31,18 +31,18 @@ Features are normalized and bounded within [-1,1].
 
 Variable names explicitly derive from the following elements:
 
-- The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
+1. The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
 
-- Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ in the raw data). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag in the raw data). 
+2. Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ in the raw data). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag in the raw data). 
 
-- Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag in the raw data. (Note the 'f' to indicate frequency domain signals). 
+3. Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag in the raw data. (Note the 'f' to indicate frequency domain signals). 
 
-* These signals were used to estimate variables of the feature vector for each pattern:  
+4. These signals were used to estimate variables of the feature vector for each pattern:  
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
- ** tBodyAcc-XYZ
- ** tGravityAcc-XYZ
- ** tBodyAccJerk-XYZ
+ - tBodyAcc-XYZ
+ - tGravityAcc-XYZ
+ - tBodyAccJerk-XYZ
  - tBodyGyro-XYZ
  - tBodyGyroJerk-XYZ
  - tBodyAccMag
@@ -58,13 +58,13 @@ Variable names explicitly derive from the following elements:
  - fBodyGyroMag
  - fBodyGyroJerkMag
 
-- The set of variables that were estimated from these signals are: 
+5. The set of variables that were estimated from these signals are: 
 
  - mean(): Mean value
  - std(): Standard deviation
  - meanFreq(): Weighted average of the frequency components to obtain a mean frequency
 
-- Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:
+6. Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:
 
  - gravityMean
  - tBodyAccMean
@@ -72,48 +72,96 @@ Variable names explicitly derive from the following elements:
  - tBodyGyroMean
  - tBodyGyroJerkMean
 
-- Hence, the full list of the variables, besides "activity" (6 labels: STANDING, SITTING, LAYING, WALKING, WALKING_DOWNSTAIRS, WALKING_UPSTAIRS, see the experimental design section above) and "subject" (30 subject identifiers from 1 to 30, from the experimental design) :
+### Full list of variables
 
-[3] "tBodyAccmeanX"                        "tBodyAccmeanY"                       
- [5] "tBodyAccmeanZ"                        "tBodyAccstdX"                        
- [7] "tBodyAccstdY"                         "tBodyAccstdZ"                        
- [9] "tGravityAccmeanX"                     "tGravityAccmeanY"                    
-[11] "tGravityAccmeanZ"                     "tGravityAccstdX"                     
-[13] "tGravityAccstdY"                      "tGravityAccstdZ"                     
-[15] "tBodyAccJerkmeanX"                    "tBodyAccJerkmeanY"                   
-[17] "tBodyAccJerkmeanZ"                    "tBodyAccJerkstdX"                    
-[19] "tBodyAccJerkstdY"                     "tBodyAccJerkstdZ"                    
-[21] "tBodyGyromeanX"                       "tBodyGyromeanY"                      
-[23] "tBodyGyromeanZ"                       "tBodyGyrostdX"                       
-[25] "tBodyGyrostdY"                        "tBodyGyrostdZ"                       
-[27] "tBodyGyroJerkmeanX"                   "tBodyGyroJerkmeanY"                  
-[29] "tBodyGyroJerkmeanZ"                   "tBodyGyroJerkstdX"                   
-[31] "tBodyGyroJerkstdY"                    "tBodyGyroJerkstdZ"                   
-[33] "tBodyAccMagmean"                      "tBodyAccMagstd"                      
-[35] "tGravityAccMagmean"                   "tGravityAccMagstd"                   
-[37] "tBodyAccJerkMagmean"                  "tBodyAccJerkMagstd"                  
-[39] "tBodyGyroMagmean"                     "tBodyGyroMagstd"                     
-[41] "tBodyGyroJerkMagmean"                 "tBodyGyroJerkMagstd"                 
-[43] "fBodyAccmeanX"                        "fBodyAccmeanY"                       
-[45] "fBodyAccmeanZ"                        "fBodyAccstdX"                        
-[47] "fBodyAccstdY"                         "fBodyAccstdZ"                        
-[49] "fBodyAccmeanFreqX"                    "fBodyAccmeanFreqY"                   
-[51] "fBodyAccmeanFreqZ"                    "fBodyAccJerkmeanX"                   
-[53] "fBodyAccJerkmeanY"                    "fBodyAccJerkmeanZ"                   
-[55] "fBodyAccJerkstdX"                     "fBodyAccJerkstdY"                    
-[57] "fBodyAccJerkstdZ"                     "fBodyAccJerkmeanFreqX"               
-[59] "fBodyAccJerkmeanFreqY"                "fBodyAccJerkmeanFreqZ"               
-[61] "fBodyGyromeanX"                       "fBodyGyromeanY"                      
-[63] "fBodyGyromeanZ"                       "fBodyGyrostdX"                       
-[65] "fBodyGyrostdY"                        "fBodyGyrostdZ"                       
-[67] "fBodyGyromeanFreqX"                   "fBodyGyromeanFreqY"                  
-[69] "fBodyGyromeanFreqZ"                   "fBodyAccMagmean"                     
-[71] "fBodyAccMagstd"                       "fBodyAccMagmeanFreq"                 
-[73] "fBodyBodyAccJerkMagmean"              "fBodyBodyAccJerkMagstd"              
-[75] "fBodyBodyAccJerkMagmeanFreq"          "fBodyBodyGyroMagmean"                
-[77] "fBodyBodyGyroMagstd"                  "fBodyBodyGyroMagmeanFreq"            
-[79] "fBodyBodyGyroJerkMagmean"             "fBodyBodyGyroJerkMagstd"             
-[81] "fBodyBodyGyroJerkMagmeanFreq"         "angle(tBodyAccMean,gravity)"         
-[83] "angle(tBodyAccJerkMean),gravityMean)" "angle(tBodyGyroMean,gravityMean)"    
-[85] "angle(tBodyGyroJerkMean,gravityMean)" "angle(X,gravityMean)"                
-[87] "angle(Y,gravityMean)"                 "angle(Z,gravityMean)
+From the experiment and the rules above, which you should read carefully as they will help you to understand the variable names, was derived the following list of the variables:
+
+- "activities" (6 labels: STANDING, SITTING, LAYING, WALKING, WALKING_DOWNSTAIRS, WALKING_UPSTAIRS) 
+- "subject" (30 subject identifiers from 1 to 30, from the experimental design)
+- "tBodyAccmeanX"
+- "tBodyAccmeanY"                       
+- "tBodyAccmeanZ"
+- "tBodyAccstdX"                        
+- "tBodyAccstdY"
+- "tBodyAccstdZ"                        
+-  "tGravityAccmeanX"
+- "tGravityAccmeanY"                    
+- "tGravityAccmeanZ"
+- "tGravityAccstdX"                     
+- "tGravityAccstdY"
+- "tGravityAccstdZ"                     
+- "tBodyAccJerkmeanX"
+- "tBodyAccJerkmeanY"                   
+- "tBodyAccJerkmeanZ"
+- "tBodyAccJerkstdX"                    
+- "tBodyAccJerkstdY"
+- "tBodyAccJerkstdZ"                    
+- "tBodyGyromeanX"
+- "tBodyGyromeanY"                      
+- "tBodyGyromeanZ"
+- "tBodyGyrostdX"                       
+- "tBodyGyrostdY"
+- "tBodyGyrostdZ"                       
+- "tBodyGyroJerkmeanX"
+- "tBodyGyroJerkmeanY"                  
+- "tBodyGyroJerkmeanZ"
+- "tBodyGyroJerkstdX"                   
+- "tBodyGyroJerkstdY"
+- "tBodyGyroJerkstdZ"                   
+- "tBodyAccMagmean"
+- "tBodyAccMagstd"                      
+- "tGravityAccMagmean"
+- "tGravityAccMagstd"                   
+- "tBodyAccJerkMagmean"
+- "tBodyAccJerkMagstd"                  
+- "tBodyGyroMagmean"
+- "tBodyGyroMagstd"                     
+- "tBodyGyroJerkMagmean"
+- "tBodyGyroJerkMagstd"                 
+- "fBodyAccmeanX"
+- "fBodyAccmeanY"                       
+- "fBodyAccmeanZ"
+- "fBodyAccstdX"                        
+- "fBodyAccstdY"
+- "fBodyAccstdZ"                        
+- "fBodyAccmeanFreqX"
+- "fBodyAccmeanFreqY"                   
+- "fBodyAccmeanFreqZ"
+- "fBodyAccJerkmeanX"                   
+- "fBodyAccJerkmeanY"
+- "fBodyAccJerkmeanZ"                   
+- "fBodyAccJerkstdX"
+- "fBodyAccJerkstdY"                    
+- "fBodyAccJerkstdZ"
+- "fBodyAccJerkmeanFreqX"               
+- "fBodyAccJerkmeanFreqY"
+- "fBodyAccJerkmeanFreqZ"               
+- "fBodyGyromeanX"
+- "fBodyGyromeanY"                      
+- "fBodyGyromeanZ"
+- "fBodyGyrostdX"                       
+- "fBodyGyrostdY"
+- "fBodyGyrostdZ"                       
+- "fBodyGyromeanFreqX"
+- "fBodyGyromeanFreqY"                  
+- "fBodyGyromeanFreqZ"
+- "fBodyAccMagmean"                     
+- "fBodyAccMagstd"
+- "fBodyAccMagmeanFreq"                 
+- "fBodyBodyAccJerkMagmean"
+- "fBodyBodyAccJerkMagstd"              
+- "fBodyBodyAccJerkMagmeanFreq"
+- "fBodyBodyGyroMagmean"                
+- "fBodyBodyGyroMagstd"
+- "fBodyBodyGyroMagmeanFreq"            
+- "fBodyBodyGyroJerkMagmean"
+- "fBodyBodyGyroJerkMagstd"             
+- "fBodyBodyGyroJerkMagmeanFreq"
+- "angle(tBodyAccMean,gravity)"         
+- "angle(tBodyAccJerkMean),
+- gravityMean)" 
+- "angle(tBodyGyroMean,gravityMean)"    
+- "angle(tBodyGyroJerkMean,gravityMean)" 
+- "angle(X,gravityMean)"                
+- "angle(Y,gravityMean)"
+- "angle(Z,gravityMean)
