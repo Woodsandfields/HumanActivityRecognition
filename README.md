@@ -45,13 +45,13 @@ NB: If you want to save the two newly created data sets as separated files *data
 
 ## Some information about the way the data were processed
 
-The raw data were assembled in a readable way for convenient processing and analysis by combining all necessary features: activities, subjects, and variables. Also, original test and train sets have been merged in order to get a complete view of all the data that were collected.  
+The raw data were assembled in a readable way for convenient processing and analysis by combining all necessary features: activities, subjects, and variables. Original test and train sets have been merged in order to get a complete view of all the data that were collected. Only mean and standard deviation as provided by the original variables in the raw data have been kept, for a total of 86 variables. Because of this choice, specific information contained in the inertial signal files from the raw data have been set aside.
 
-Activity labels have been put first in this final reordering and summarizing with the goal of getting a view by activity rather than by subject for possible further analysis as it makes more sense. Activity coded labels have been replaced by original names like "STANDING" or "SITTING", etc. Subjects have been reordered by rank from 1 to 30 from the test group and the train group together. Variable names have been slightly rearranged for convenience.
+Activity labels have been put first with the goal of getting a view by activity first rather than by subject first when coming to the final summary as it makes more sense. Subjects have been reordered by rank from 1 to 30 from the test group and the train group together. Activity coded labels have been replaced by original names like "STANDING" or "SITTING", etc. Variable names have been slightly rearranged for scripting convenience as well as for compliance with the recommandations issued by the Johns Hopkins University data science department.
 
-Furthermore, only mean and standard deviation of all the original variables have been kept, for a total of 86 variables. In *data_set1.csv*, all observations for each activity and subject have been kept. In *data_set2.csv*, only a summary has been made by giving the average for each mean and standard deviation variable by activity and subject.
+In *data_set1.csv*, all observations for each activity and subject have been kept (when related to mean and standard deviation, as said above). In *data_set2.csv*, a summary of those has been made by giving the average for each variable by activity and subject.
 
-If you want information about the variables themselves and how the experiment, please refer to the CodeBook.
+If you want information about the variables themselves and how the original experiment was conducted, please refer to the CodeBook.
 
 
 ## License information and more
