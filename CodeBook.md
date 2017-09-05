@@ -37,12 +37,12 @@ Variable names explicitly derive from the following elements:
 
 - Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag in the raw data. (Note the 'f' to indicate frequency domain signals). 
 
-- These signals were used to estimate variables of the feature vector for each pattern:  
+* These signals were used to estimate variables of the feature vector for each pattern:  
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
- - tBodyAcc-XYZ
- - tGravityAcc-XYZ
- - tBodyAccJerk-XYZ
+ ** tBodyAcc-XYZ
+ ** tGravityAcc-XYZ
+ ** tBodyAccJerk-XYZ
  - tBodyGyro-XYZ
  - tBodyGyroJerk-XYZ
  - tBodyAccMag
