@@ -47,13 +47,9 @@ NB: If you want to save the two newly created data sets as separated files *data
 
 The raw data were assembled in a readable way for convenient processing and analysis by combining all necessary features: activities, subjects, and variables. Also, original test and train sets have been merged in order to get a complete view of all the data that were collected.  
 
-Activity labels have been put first in this final reordering and summarizing with the goal of getting a view by activity rather than by subject for possible further analysis as it makes more sense. Activity coded labels have been replaced by original names like "STANDING" or "SITTING", etc. Subjects have been reordered by rank from 1 to 30 from the test group and the train group together. Variable names have been slightly arranged for readability convenience.
+Activity labels have been put first in this final reordering and summarizing with the goal of getting a view by activity rather than by subject for possible further analysis as it makes more sense. Activity coded labels have been replaced by original names like "STANDING" or "SITTING", etc. Subjects have been reordered by rank from 1 to 30 from the test group and the train group together. Variable names have been slightly rearranged for convenience.
 
-Furthermore, only mean and standard deviation of all the original variables have been kept, for a total of 86 variables.
-
-In *data_set1.csv*, all observations for each activity and subject have been kept. 
-
-In *data_set2.csv*, only a summary has been made by giving the average for each mean and standard deviation variable by activity and subject.
+Furthermore, only mean and standard deviation of all the original variables have been kept, for a total of 86 variables. In *data_set1.csv*, all observations for each activity and subject have been kept. In *data_set2.csv*, only a summary has been made by giving the average for each mean and standard deviation variable by activity and subject.
 
 If you want information about the variables themselves and how the experiment, please refer to the CodeBook.
 
