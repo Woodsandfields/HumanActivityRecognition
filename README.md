@@ -1,7 +1,9 @@
 # HAR - HumanActivityRecognition
 Cleaning Data for HAR with smartphones datasets. 
 
-Here you will find:
+This repo represents **my personal submission for the final assignment on the Data Cleaning course in R by the Johns Hopkins University with Coursera** in the context of the data specialization curriculum. I had to rearrange, clean, and start processing two correlated datasets containing smartphone data collected from a group of smartphone owners that carried information about their mobility. The ultimate goal of this data collection was to find out from the data how to identify the subjects' current activity (sitting, standing, lying, walking, etc.) and see if the emitted hypothesis about how to classify them was correct.  
+
+Here below you will find:
 - Files in this repository (a detailed list)
 - What you need to know about the files
 - Some information about the way the data were processed
